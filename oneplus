@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: debug a variable
+    debug:
+      var: ansible_distribution
+  - name: display a message
+    debug:
+      msg: "same message to display"    
